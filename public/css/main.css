@@ -1090,8 +1090,8 @@ form .has-placeholder.textarea label + [class*="fa-"] {
 }
 
 [role="tablist"] .card-header a {
-	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-	background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #0d47a1 100%);
+	background-image: linear-gradient(to right, #5b83cd 0%, #0d47a1 100%);
 	border-radius: 30px;
 	box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.13);
 	color: #fff;
@@ -7966,8 +7966,8 @@ body.boxed {
 
 .btn-maincolor,
 .btn-maincolor:not(:disabled):not(.disabled):active {
-	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-	background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #0d47a1 100%);
+	background-image: linear-gradient(to right, #5b83cd 0%, #0d47a1 100%);
 }
 
 .btn-maincolor2,
@@ -9007,7 +9007,7 @@ body.boxed {
 ** Color Background Section - .cs
 */
 .cs.cs2 {
-	background-color: #c280bf;
+	background-color: #0d47a1;
 }
 
 .cs.cs2 .color-main {
@@ -9672,8 +9672,8 @@ body.boxed {
 }
 
 .bg-maincolor {
-	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-	background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #0d47a1 100%);
+	background-image: linear-gradient(to right, #5b83cd 0%, #0d47a1 100%);
 }
 
 .bg-maincolor2 {
@@ -17550,7 +17550,7 @@ img.absolute_image {
 }
 
 .background-gradient2 {
-	background-image: url("../img/background-gradient02.jpg");
+	background-image: linear-gradient(to right, #457fca 0%, #5691c8 100%);
 }
 
 .booking-form {

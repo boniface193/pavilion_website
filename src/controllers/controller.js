@@ -180,10 +180,6 @@ exports.renderspace = (req, res) => {
     })
 }
 
-exports.renderYharah = (req, res) => {
-    res.render('views/yharah')
-}
-
 exports.renderAcademy = (req, res) => {
     res.render('views/academy')
 }

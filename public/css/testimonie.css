@@ -25,3 +25,7 @@ img.signature{
     min-height: 10vh;
     min-width: 10vh;
 }
+
+ul.slides img{
+    height: 100vh;
+}

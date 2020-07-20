@@ -131,14 +131,14 @@
                 <header class="page_header ls justify-nav-end">
                     <div class="container-fluid">
                         <div class=" justify-content-center">
-                            <div class="col-xl-8 col-lg-8 col-md-7 col-1">
+                            <div class="col-xl-10 col-lg-10 col-md-10 col-1">
                                 <div class="nav-wrap">
 
                                     <!-- main nav start -->
                                     <nav class="top-nav">
                                         <ul class="nav sf-menu">
 
-                                            <li>
+                                            <li class="active">
                                                 <a href="/">Home</a>
                                             </li>
 
@@ -147,22 +147,12 @@
                                             </li>
                                             <!-- eof pages -->
 
-                                            <li class="active">
-                                                <a href="/products">Our Products</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="/space">Co-working Space</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/yharah">Yharah</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/academy">IO Academy</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/beleful">Beleful</a>
-                                                    </li>
-                                                </ul>
+                                            <li>
+                                                <a href="/space">Co-workingSpace</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/academy">IO Academy</a>
                                             </li>
 
                                             <li>
@@ -306,38 +296,40 @@
         </div>
     </section>
 
-<section class="ls s-pt-80 s-pb-20 s-pt-lg-130 s-pb-lg-70 s-pt-xl-160 s-pb-xl-100 c-gutter-60 c-mb-50 " id="advantage">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h5 class="special-heading">Check out Our</h5>
-            <h3 class="text-uppercase">Students Plan</h3>
-            <p>Students who wish to take advantage of the student plan have to provide a valid student ID Card</p>
-        </div>
-        <div class="row">
-            {{#each student}}
-            <div class="col-xl-3 col-md-6 animate" data-animation="fadeInUp">
-                <div class="icon-box text-center">
-                    <h5>
-                        {{planName}}
-                    </h5>
-                    <div>
-                        <h6>₦{{price}}</h6>
-                        <ul class="list1">
-                        {{#each planDetails}}
-                        <li>{{planInfo}}</li>
-                        {{/each}}
-                        </ul>
-                        <a class="btn btn-maincolor2 mt-4"><span>purchase</span></a>
+    <section class="ls s-pt-80 s-pb-20 s-pt-lg-130 s-pb-lg-70 s-pt-xl-160 s-pb-xl-100 c-gutter-60 c-mb-50 "
+        id="advantage">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="special-heading">Check out Our</h5>
+                <h3 class="text-uppercase">Students Plan</h3>
+                <p>Students who wish to take advantage of the student plan have to provide a valid student ID Card</p>
+            </div>
+            <div class="row">
+                {{#each student}}
+                <div class="col-xl-3 col-md-6 animate" data-animation="fadeInUp">
+                    <div class="icon-box text-center">
+                        <h5>
+                            {{planName}}
+                        </h5>
+                        <div>
+                            <h6>₦{{price}}</h6>
+                            <ul class="list1">
+                                {{#each planDetails}}
+                                <li>{{planInfo}}</li>
+                                {{/each}}
+                            </ul>
+                            <a class="btn btn-maincolor2 mt-4"><span>purchase</span></a>
+                        </div>
                     </div>
                 </div>
+                {{/each}}
+                <div class="d-none d-lg-block divider-small"></div>
+
             </div>
-            {{/each}}
-            <div class="d-none d-lg-block divider-small"></div>
-
         </div>
-    </div>
-</section>
+    </section>
 
+    {{!-- footer --}}
     <footer
         class="page_footer ls ms s-pt-80 s-pb-70 s-py-lg-120 s-pt-xl-135 s-pb-xl-105 c-gutter-60 text-center text-md-left">
         <div class="container">
@@ -371,23 +363,23 @@
 
                 <div class="col-md-4 animate" data-animation="fadeInUp">
                     <div class="widget services-links">
-                        <h4 class="widget-title">Services</h4>
+                        <h4 class="widget-title">Quick Link</h4>
                         <ul>
+                            <li class="cat-item">
+                                <i class="fas fa-check text-info mr-3"></i>
+                                <a href="/about">About Us</a>
+                            </li>
                             <li class="cat-item">
                                 <i class="fas fa-check text-info mr-3"></i>
                                 <a href="/space">Co-working space</a>
                             </li>
                             <li class="cat-item">
                                 <i class="fas fa-check text-info mr-3"></i>
-                                <a href="/beleful">Beleful</a>
-                            </li>
-                            <li class="cat-item">
-                                <i class="fas fa-check text-info mr-3"></i>
-                                <a href="/yharah">yharah</a>
-                            </li>
-                            <li class="cat-item">
-                                <i class="fas fa-check text-info mr-3"></i>
                                 <a href="/academy">IO Academy</a>
+                            </li>
+                            <li class="cat-item">
+                                <i class="fas fa-check text-info mr-3"></i>
+                                <a href="/contact">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -396,7 +388,7 @@
                     <div class="widget widget_icons_list">
                         <h4 class="widget-title">Call Us</h4>
                         <p>
-                            <a href="tel:+2349020455349">{{pavInfo.phone}}</a>
+                            <a href="tel:+2349020455349">+2349020455349</a>
                         </p>
                         <a href="mailto:info@firstpavitech.com" class="small-text">
                             <i class="fas fa-envelope color-main fs-14"></i>
@@ -429,6 +421,7 @@
     </div><!-- eof #box_wrapper -->
     </div><!-- eof #canvas -->
 
+
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -442,10 +435,12 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     {{!-- This is font awesome cdn --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    {{!-- year counter --}}
     <script src="js/footerFullYr.js"></script>
     {{!-- custom CSS --}}
     <script src="js/compressed.js"></script>
     <script src="js/main.js"></script>
+
 
 </body>
 
