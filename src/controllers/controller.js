@@ -14,6 +14,10 @@ exports.renderHomePage = (req, res) => {
     })
 }
 
+exports.renderAbout = (req, res) => {
+    res.render('views/about')
+}
+
 exports.renderspace = (req, res) => {
     res.render('views/space', {
         pricing: {
@@ -177,15 +181,7 @@ exports.renderspace = (req, res) => {
 }
 
 exports.renderYharah = (req, res) => {
-    res.render('views/yharah', {
-        // yharah: {
-        //     a: {info: 'Efficiency'}, 
-        //     b: {info: '3x faster'}, 
-        //     c: {info: 'Good customer Service'}, 
-        //     d: {info: 'Pocket friendly'}, 
-        //     e: {info: 'Larger Reach (within Abeokuta)'}
-        // }
-    })
+    res.render('views/yharah')
 }
 
 exports.renderAcademy = (req, res) => {

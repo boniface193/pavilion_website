@@ -7,8 +7,7 @@ router.get('/space', controller.renderspace)
 router.get('/yharah', controller.renderYharah)
 router.get('/academy', controller.renderAcademy)
 router.get('/contact', controller.renderContact)
-
-// router.get('/', controller.renderEmail)
+router.get('/about', controller.renderAbout)
 // router.get('/index2', controller.renderIndex2)
 
 module.exports = router;
