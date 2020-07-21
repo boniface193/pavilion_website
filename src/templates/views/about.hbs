@@ -40,8 +40,9 @@
 		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
 	<![endif]-->
 
-	<div class="preloader">
-		<div class="preloader_image"></div>
+	<div class="preloader text-center" style="padding-top: 50vh;">
+		<div class="spinner-grow text-primary"></div>
+		{{!-- <div class="preloader_image"></div> --}}
 	</div>
 
 	<!-- search modal -->
@@ -138,11 +139,11 @@
 									<nav class="top-nav">
 										<ul class="nav sf-menu">
 
-											<li class="active">
+											<li>
 												<a href="/">Home</a>
 											</li>
 
-											<li>
+											<li class="active">
 												<a href="/about">About Us</a>
 											</li>
 											<!-- eof pages -->
@@ -187,22 +188,19 @@
 				</header>
 			</div>
 
-			<section class="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
+			<section class="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center page_slider">
+				<div id="particles-js"></div>
+				<img src="image/slide.jpg" alt="" style="height: 55vh;">
 				<div class="container-fluid">
 					<div class="row">
-
 						<div class="divider-60"></div>
-
 						<div class="col-md-12 text-center">
-							<h1>About Us</h1>
+							<h1>About us</h1>
 						</div>
-
 						<div class="divider-50"></div>
-
 					</div>
-
 				</div>
-				<ol class="breadcrumb full-width">
+				<ol class="breadcrumb full-width bg-maincolor">
 					<li class="breadcrumb-item">
 						<a href="/">Home</a>
 					</li>
@@ -216,6 +214,186 @@
 	</div>
 
 
+	{{!-- Brief Info on first pavilion--}}
+	<section class="ls ms s-pt-80 s-pb-20 s-pt-lg-100 s-pb-lg-50 s-pt-xl-150 s-pb-xl-80 c-gutter-60 c-mb-50" id="advantage">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center" id="price">
+					<h5 class="special-heading text-center mb-2">First Pavilion</h5>
+					<h3 class="text-center indigo-text">Technologies</h3>
+				</div>
+				<p>
+					Is a modern Information and Communication Technology Company with qualified and friendly staff capable of turning your ICT issues into the futuristic innovation you have in mind. We offer various services ranging from ICT consultancy to Software services.
+				</p>
+				<p>
+					Our company is known to have a meticulous approach to work, paying attention to even the most minuscule detail. Multitask and work under pressure thus effectively managing our time to meet deadlines while giving you quality results with high standards.
+				</p>
+				<p>
+					Through our services and dedicated commitment to your innovative future, we help you take your business(es) into the next level of innovation bringing about rapid and positive turnover.
+				</p>
+			</div>
+		</div>
+	</section>
+	{{!-- Brief info on first pavilion--}}
+
+
+
+	{{!-- Brief Info on services --}}
+	<section class="s-pt-80 s-pb-50 s-pt-lg-120 s-pb-lg-90 s-pt-xl-160 s-pb-xl-130 c-gutter-30 c-mb-30 service-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-lg-center">
+					<h5 class="special-heading">Check out</h5>
+					<h3 class="text-uppercase">our Services</h3>
+				</div>
+			</div>
+			<div class="row" id="service">
+
+				<div class="col-lg-4 col-sm-6">
+
+					<div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+						style="min-height: 100%;">
+						<div class="item-media shadow">
+							<img src="services/consult.jpg" alt="" style="min-height: 100%;">
+						</div>
+						<div class="item-content">
+							<h5 class="service-title">
+								Consultancy
+							</h5>
+
+							<p> We are not just professionals, we are ever ready to offer a professional ICT
+								consultant service
+							</p>
+
+						</div>
+					</div>
+				</div><!-- .col-* -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+						style="min-height: 100%;">
+						<div class="item-media shadow">
+							<img src="services/mobile-web.jpg" alt="" style="min-height: 100%;">
+						</div>
+						<div class="item-content">
+							<h5 class="service-title">
+								Mobile & Web Solutions
+							</h5>
+
+							<p>
+								Need a Mobile Solution, Website or Web Application? We offer the best
+								application develop
+							</p>
+
+						</div>
+					</div>
+				</div><!-- .col-* -->
+				<div class="col-lg-4 col-sm-6">
+
+					<div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+						style="min-height: 100%;">
+						<div class="item-media shadow">
+							<img src="services/integration.jpg" alt="" style="min-height: 100%;">
+						</div>
+						<div class="item-content">
+							<h5 class="service-title">
+								System Integration
+							</h5>
+
+							<p>
+								Integrating 3rd Party Applications into your portfolio has never been easier, To
+								improve productivity and quality of your operations.
+							</p>
+
+						</div>
+					</div>
+				</div><!-- .col-* -->
+				<div class="col-lg-4 col-sm-6">
+
+					<div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+						style="min-height: 100%;">
+						<div class="item-media shadow">
+							<img src="services/enterprise.jpg" alt="">
+						</div>
+						<div class="item-content">
+							<h5 class="service-title">
+								Enterprise Applications
+							</h5>
+
+							<p>
+								We offer software solutions that provide business logic and tools to model
+								entire business process for organisations to improve productivity and
+								efficiency.
+							</p>
+
+						</div>
+					</div>
+				</div><!-- .col-* -->
+				<div class="col-lg-4 col-sm-6">
+
+					<div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+						style="min-height: 100%;">
+						<div class="item-media shadow">
+							<img src="services/cloud.jpg" alt="">
+						</div>
+						<div class="item-content">
+							<h5 class="service-title">
+								Cloud Services
+							</h5>
+
+							<p>
+								Every Business Need a Cloud service, These services are designed to provide
+								easy, affordable access to applications and resources, without the need for
+								internal infrastructure or hardware.
+							</p>
+
+						</div>
+					</div>
+				</div><!-- .col-* -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+						style="min-height: 100%;">
+						<div class="item-media">
+							<img src="services/academy.jpg" alt="">
+						</div>
+						<div class="item-content">
+							<h5 class="service-title">
+								IO Academy
+							</h5>
+					
+							<p>
+								IO Academy is a Training and Knowledge Transfer, With a team of multi-talented
+								individuals, we also provide trainings to interested parties on varieties of
+								Packages.
+							</p>
+					
+						</div>
+					</div>
+					{{!-- <div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+						style="min-height: 100%;">
+						<div class="item-media">
+							<div class="" style="background-image: url(services/academy.jpg); ">
+								<div class="rgba-blue-strong" style="padding: 35%">
+								</div>
+							</div>
+						</div>
+						<div class="item-content">
+							<h5 class="service-title">
+								IO Academy
+							</h5>
+
+							<p>
+								IO Academy is a Training and Knowledge Transfer, With a team of multi-talented
+								individuals, we also provide trainings to interested parties on varieties of
+								Packages.
+							</p>
+
+						</div>
+					</div> --}}
+				</div><!-- .col-* -->
+			</div>
+		</div>
+	</section>
+	{{!-- Brief info on services ends here --}}
 
 	{{!-- footer --}}
 	<footer
@@ -295,7 +473,7 @@
 			</div>
 		</div>
 	</footer>
-	<section class="page_copyright ds s-py-10 copyright-bg">
+	<section class="page_copyright ds s-py-10 background-gradient2">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="divider-15 d-none d-lg-block"></div>

@@ -3258,7 +3258,7 @@ a.pswp__share--download:hover {
 ** toTop
 */
 #toTop {
-	background-color: #c280bf;
+	background-color: #0d47a1;
 	border-radius: 50%;
 	bottom: 10px;
 	color: transparent;
@@ -7805,6 +7805,16 @@ body.boxed {
 [class*="-item"]:hover .media-links:before {
 	opacity: 0.6;
 }
+
+/* .overlay{
+	bottom: 0;
+	left: 0;
+	background-color: blue;
+	opacity: ;
+	position: absolute;
+	right: 0;
+	top: 0;
+} */
 
 .media-links a.abs-link {
 	bottom: 0;
@@ -14577,7 +14587,7 @@ a img.aligncenter {
 }
 
 .toggle_menu.mobile-active {
-	background-color: #5b83cd;
+	background-color: #0d47a1;
 	border: none;
 	left: auto;
 	margin: 0;
@@ -14666,7 +14676,7 @@ a img.aligncenter {
 
 	.sf-menu {
 		background-color: #fff;
-		border-top: 61px solid #5b83cd;
+		border-top: 61px solid #0d47a1;
 		bottom: 0;
 		color: #4c4c4c;
 		display: block;

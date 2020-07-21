@@ -1,17 +1,7 @@
 const axios = require('axios')
 
 exports.renderHomePage = (req, res) => {
-    res.render('views/index', {
-        pavInfo: {
-            phone: '+234 902 045 5349',
-        },
-            io: {
-                image: 'image/web.jpg', title: 'Web Development', body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis molestiae saepe enim quisquam inventore voluptas minima dolorem esse quam doloribus ab rerum consequatur quo unde culpa, quaerat illum beatae provident!', id: 'webID',
-                image: 'image/gaming.jpg', title: 'Game Development', body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis molestiae saepe enim quisquam inventore voluptas minima dolorem esse quam doloribus ab rerum consequatur quo unde culpa, quaerat illum beatae provident!', id: 'gameID'
-
-                
-            } 
-    })
+    res.render('views/index')
 }
 
 exports.renderAbout = (req, res) => {
@@ -21,7 +11,7 @@ exports.renderAbout = (req, res) => {
 exports.renderspace = (req, res) => {
     res.render('views/space', {
         pricing: {
-            Free:{
+            Free: {
                 planName: 'Freelancer', price: '1,500', span: '/Day', planDetails: {
                     a: {
                         planInfo: 'A day Plan(10am - 7pm)'
@@ -33,7 +23,7 @@ exports.renderspace = (req, res) => {
                         planInfo: '₦500, on sundays(3pm - 6pm)',
                     }
                 }
-                    
+
             },
             Active: {
                 planName: 'Active', price: '7,000', span: '/Week', planDetails: {
@@ -199,7 +189,7 @@ exports.renderContact = (req, res) => {
 //         .then((response) => {
 //             console.log(response)
 //             // res.render('index', {
-                
+
 //             //     sunset: `Sunset: ${response.data.sys.sunset}`,
 
 //             // })

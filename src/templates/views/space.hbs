@@ -40,8 +40,9 @@
 		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
 	<![endif]-->
 
-    <div class="preloader">
-        <div class="preloader_image"></div>
+    <div class="preloader text-center" style="padding-top: 50vh;">
+        <div class="spinner-grow text-primary"></div>
+        {{!-- <div class="preloader_image"></div> --}}
     </div>
 
     <!-- search modal -->
@@ -138,7 +139,7 @@
                                     <nav class="top-nav">
                                         <ul class="nav sf-menu">
 
-                                            <li class="active">
+                                            <li>
                                                 <a href="/">Home</a>
                                             </li>
 
@@ -147,7 +148,7 @@
                                             </li>
                                             <!-- eof pages -->
 
-                                            <li>
+                                            <li class="active">
                                                 <a href="/space">Co-workingSpace</a>
                                             </li>
 
@@ -187,22 +188,19 @@
                 </header>
             </div>
 
-            <section class="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
+            <section class="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center page_slider">
+                <div id="particles-js"></div>
+                <img src="image/slide.jpg" alt="" style="height: 55vh;">
                 <div class="container-fluid">
                     <div class="row">
-
                         <div class="divider-60"></div>
-
                         <div class="col-md-12 text-center">
                             <h1>Co-working Space</h1>
                         </div>
-
                         <div class="divider-50"></div>
-
                     </div>
-
                 </div>
-                <ol class="breadcrumb full-width">
+                <ol class="breadcrumb full-width bg-maincolor">
                     <li class="breadcrumb-item">
                         <a href="/">Home</a>
                     </li>
@@ -273,7 +271,7 @@
                 <div class="col-xl-6 col-lg-6 col-lg-6 col-xs-12 order-2 order-lg-1 animate"
                     data-animation="fadeInLeftBig">
                     <div class="side-image">
-                        <img src="images/about-image.png" width="880" alt="">
+                        <img src="services/share.svg" width="880" alt="">
                         <div class="d-block d-lg-none divider-10"></div>
                     </div>
                 </div>
@@ -407,7 +405,7 @@
             </div>
         </div>
     </footer>
-    <section class="page_copyright ds s-py-10 copyright-bg">
+    <section class="page_copyright ds s-py-10 background-gradient2">
         <div class="container">
             <div class="row align-items-center">
                 <div class="divider-15 d-none d-lg-block"></div>
