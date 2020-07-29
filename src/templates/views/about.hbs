@@ -42,21 +42,6 @@
 
 	<div class="preloader text-center" style="padding-top: 50vh;">
 		<div class="spinner-grow text-primary"></div>
-		{{!-- <div class="preloader_image"></div> --}}
-	</div>
-
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<div class="widget widget_search">
-			<form class="form-inline d-flex justify-content-center md-form form-sm mt-0 search-form"
-				action="http://webdesign-finder.com/" method="get">
-				<input class="form-control form-control-sm ml-3 w-75 border-0" type="text" placeholder="Search"
-					aria-label="Search">
-			</form>
-		</div>
 	</div>
 
 	<!-- wrappers for visual page editor and boxed version of template -->
@@ -71,6 +56,32 @@
 				<div class="container-fluid">
 					<div class="row align-items-center">
 						<div class="col-md-6 text-md-left text-center">
+							<ul class="top-includes">
+								<li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main2 fs-14">
+											<img src="image/fp-logo-big.png" width="20" height="20" alt="FirstPavilionLogo">
+										</span>
+										<span class="small-text">
+											<span class="small-text">
+												<a class="hover-main2" href="/"> First Pavilion Technologies</a>
+											</span>
+										</span>
+									</span>
+								</li>
+								{{!-- <li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main2 fs-14">
+											<i class="fa fa-user"></i>
+										</span>
+										<span class="small-text">
+											<a class="hover-main2" href="/login"> Login in</a>
+										</span>
+									</span>
+								</li> --}}
+							</ul>
+						</div>
+						<div class="col-md-6 text-center text-md-right d-none d-md-block">
 							<ul class="top-includes">
 								<li>
 									<span class="icon-inline">
@@ -94,38 +105,11 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-6 text-center text-md-right d-none d-md-block">
-							<ul class="top-includes">
-								<li>
-									<span class="icon-inline">
-										<span class="icon-styled color-main2 fs-14">
-											<img src="image/fp-logo-big.png" width="20" height="20"
-												alt="FirstPavilionLogo">
-										</span>
-										<span class="small-text">
-											<span class="small-text">
-												<a class="hover-main2" href="/"> First Pavilion Technologies</a>
-											</span>
-										</span>
-									</span>
-								</li>
-								<li>
-									<span class="icon-inline">
-										<span class="icon-styled color-main2 fs-14">
-											<i class="fa fa-user"></i>
-										</span>
-										<span class="small-text">
-											<a class="hover-main2" href="/login"> Login in</a>
-										</span>
-									</span>
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</section>
 			<!--eof topline-->
-
+			
 			<div class="header_absolute header_layout_1">
 				<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
 				<header class="page_header ls justify-nav-end">
@@ -133,51 +117,35 @@
 						<div class=" justify-content-center">
 							<div class="col-xl-10 col-lg-10 col-md-10 col-1">
 								<div class="nav-wrap">
-
+			
 									<!-- main nav start -->
 									<nav class="top-nav">
 										<ul class="nav sf-menu">
-
+			
 											<li>
 												<a href="/">Home</a>
 											</li>
-
+			
 											<li class="active">
 												<a href="/about">About Us</a>
 											</li>
 											<!-- eof pages -->
-
+			
 											<li>
 												<a href="/space">Co-workingSpace</a>
 											</li>
-
+			
 											<li>
 												<a href="/academy">I/O Academy</a>
 											</li>
-
+			
 											<li>
 												<a href="/contact">Contact Us</a>
 											</li>
 										</ul>
-
+			
 									</nav>
 									<!-- eof main nav -->
-
-									<!--hidding includes on small devices. They are duplicated in topline-->
-									<ul class="top-includes d-none d-xl-block search-icon">
-
-										<li>
-											<!--modal search-->
-											<span>
-												<a href="" class="search_modal_button">
-													<i class="fa fa-search"></i>
-												</a>
-											</span>
-
-										</li>
-
-									</ul>
-
 								</div>
 							</div>
 						</div>
