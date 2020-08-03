@@ -1,7 +1,39 @@
 const axios = require('axios')
 
 exports.renderHomePage = (req, res) => {
-    res.render('views/index')
+    res.render('views/index', {
+        io: {
+            robotic: {
+                image: 'image/embedded.jpg', alt: 'Robotic image', title: 'Robotics and Embedded System'
+            },
+            web: {
+                image: 'image/web.jpg', alt: 'web image', title: 'Web Development'
+            },
+            game: {
+                image: 'image/gaming.jpg', alt: 'game image', title: 'Game Development '
+            },
+            Artificial: {
+                image: 'image/robotic.jpg', alt: 'artificial image', title: 'Artificial Intelligence'
+            },
+            mobile: {
+                image: 'image/embedded.jpg', alt: 'mobile image', title: 'Robotics and Embedded System'
+            },
+            vr: {
+                image: 'image/vr.jpg', alt: 'virtual image', title: 'Augmented Reality (AR) / Virtual Reality (VR)'
+            },
+        },
+        testimony: {
+            first: {
+                image: '', name: 'Gregory D. Grey, Client', info: `We had hughesnet for ages and were completely unhappy with it. We switched to MaxiCom and have never looked back. We are much much happier!`, sign: 'images/testimonial-sign-1.png'
+            },
+            second: {
+                image: '', name: 'Betsy R. Donley, Client', info: `I have been a client of MaxiCom for several years. They provide an excellent service at an amazingly great price. I tell my friends about a great service.`, sign: 'images/testimonial-sign-2.png'
+            },
+            third: {
+                image: '', name: 'Gregory D. Grey, Client', info: `Have had their service for over 1 year, completely trouble free. Installers were a pleasure to deal with. Installation was actually less than estimate.`, sign: 'images/testimonial-sign-3.png'
+            }
+        }
+    })
 }
 
 exports.renderAbout = (req, res) => {

@@ -72,4 +72,18 @@ ul.slides img{
     button#contact_form_submit{
         width: 100%;
     }
+
+    a#toTop::after{
+        margin-top: 150vh;
+    }
+
+    .text-center h1{
+        line-height: 45px;
+    }
+}
+
+.para{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 20px;
 }
