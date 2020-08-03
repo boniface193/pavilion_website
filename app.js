@@ -1,4 +1,4 @@
-// const path = require('path')
+const path = require('path')
 const express = require('express')
 const app = express()
 const hbs = require('hbs')
@@ -7,12 +7,14 @@ const router = require('./src/routers/router')
 // const browserSync = browserify()
 // browserSync.add('./app.js')
 // browserSync.bundle().pipe(process.stdout)
+const partialsPath = path.join(__dirname, './src/templates/partials')
 
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json())
+// app.use(express.urlencoded({ extended: false }))
+// app.use(express.json())
 app.use(express.static(__dirname + "/public"))
 app.set("views", "./src/templates")
 app.set("view engine", "hbs")
+hbs.registerPartials(partialsPath)
 
 app.use('/', router)
 
