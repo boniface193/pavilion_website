@@ -241,8 +241,3 @@ exports.renderAcademy = (req, res) => {
 exports.renderContact = (req, res) => {
     res.render('views/contact')
 }
-
-
-// exports.renderHomeSecond = (req, res) => {
-//     res.render('views/index2')
-// }
